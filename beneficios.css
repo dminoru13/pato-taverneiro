@@ -1,0 +1,470 @@
+* {
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-image: url("imgs/fundo.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img#tradutor
+{
+    margin-right: 3vw;
+}
+
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+    display: none;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+
+
+#menu-mobile {
+    transition: rotate 1s ease;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 3px;
+    background-color: white;
+    margin-top: 8px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+header div {
+    height: 60%;
+    display: flex;
+    flex-direction: initial;
+    flex-direction: row;
+}
+
+header div h1 {
+    font-size: 3vw;
+}
+
+header div img {
+    width: 5vw;
+}
+
+nav {
+    background-color: rgb(43, 43, 43);
+    height: 40%;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+
+nav div {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    margin-top: 0.5vh;
+}
+
+  
+
+
+nav h1, header h1 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+.clicavel {
+    color: #fff;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.8s ease-out;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    font-size: 2vw;
+}
+
+
+
+.clicavel:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+footer
+{
+height: 4vh;
+background-color: #000000;
+color: #fff;
+text-align: center;
+}
+
+
+
+main
+{
+    height: auto;
+   
+    margin-top: 0;
+    
+}
+
+
+
+div#um 
+{
+    height: 95%;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 70%);
+    margin-top: 12vw;
+}
+
+.titulo
+{
+  color: yellow;
+  margin-left: 1%;
+  opacity: 100%;
+  font-size: 1.5vw;
+}
+
+
+
+div#dois
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.textos
+{
+   width: 100%;
+   background-color: rgba(0, 0, 0, 60%);
+   height: 90%;
+   padding-top: 1vw;
+   padding-bottom: 3vw;
+   animation: fadeIn 5s forwards;
+   margin-bottom: 1vw;
+}
+
+.textos div
+{
+   padding-bottom: 10px;
+   padding-top: 0.3vw;
+   opacity: 100%;
+   text-align: justify;
+   margin-top: 1vw;
+}
+
+.textos div h1
+{
+   color: white;
+   font-size: 1.7vw;
+   margin: 1.3VW;
+   text-align: center;
+}
+
+.textos div p
+{
+   color: white;
+   font-size: 1.4vw;
+   margin: 1.3VW;
+}
+
+
+.textos, .i1
+{
+    width: 100%;
+}
+
+
+.sub-titulo
+{
+    color: white;
+    font-size: 1vw
+}
+
+
+
+
+
+div#logo
+{
+    text-align: center;
+    margin-top: 4vw;
+}
+
+
+img#logoimg
+{
+    width: 45vw;
+    animation: fadeIn 1.2s forwards;
+}
+
+div#bloco1
+{
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    margin: 4vw;
+}
+
+div#t1
+{
+    width: 80%; 
+    animation: fadeIn 1.6s forwards;
+    background-size: cover;
+    height: 45vw;
+}
+
+
+div#t2
+{
+    background-size: cover;
+    width: 80%;    
+    animation: fadeIn 1.8s forwards;
+    height: auto;
+}
+
+
+img#i1
+{
+    width: 30vw;
+    height: 50vw;
+    margin-left: 0.3vw;
+    animation: fadeIn 1.9s forwards;
+}
+
+img#i2
+{
+    width: 30vw;
+    margin-left: 0.3vw;
+    margin-top: 3vw;
+    animation: fadeIn 2s forwards;
+}
+
+img#i3
+{
+    width: 50vw;
+    margin-left: 0.3vw;
+    margin-top: 3vw;
+    animation: fadeIn 2s forwards;
+}
+
+
+div#bloco2
+{
+    text-align: center;
+    margin-bottom: 20vh;
+    animation: fadeIn 2s forwards;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+div#bloco2 div P
+{
+    color: #fff;
+    font-size: 3vw;
+    font-family: 'Bebas Neue';
+    margin-bottom: -1vw;
+}
+
+
+div#bloco2 div a img
+{
+    width: 40vw;
+    height: 17vw;
+    margin: 10px;
+    border: #fff 2px solid;
+    border-radius: 40px;
+    opacity: 80%;
+}
+
+
+div#bloco2 div a img:hover
+{
+    opacity: 100%;
+}
+
+
+.i-centro
+{
+    text-align: center;
+}
+
+
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Opcional: Adicione um leve efeito de deslize para cima */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+
+    header {
+        height: 25vw;
+        background-color: #202020;
+    }
+
+
+
+
+
+    #menu-mobile{
+        display: block;
+    }
+    
+    #menu-mobile svg{
+            transition: rotate 900ms ease;
+        
+    }
+
+    header div h1 {
+        font-size: 8vw;
+    }
+
+
+    header div img {
+        width: 12vw;
+    }
+
+
+
+    nav {
+        height: 0vh;
+        transition: height 1s ease-in-out;
+        z-index: 1000;
+        position: absolute;
+        top: 25vw;
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+    }
+
+    nav div{
+        display: none;
+        height: 35vh;
+        margin: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }   
+
+
+    nav a p,.clicavel {
+        font-size: 8vw;
+    }
+
+    div#bloco1,div#bloco2
+    {
+        flex-direction: column;
+    }
+
+    img#i1, img#i2
+    {
+        display: none;
+    }
+
+    
+    .textos div h1
+     {
+        color: white;
+        font-size:  5vw;
+        margin: 1.3VW;
+     }
+
+
+     div#t1
+     {
+         width: 100%;    
+         height: auto;
+     }
+
+     div#mobile_img
+    {
+        display: block;
+    }
+
+    div#mobile_img img
+    {
+        display: block;
+        width: 90vw;
+    }
+
+     div#t2
+    {
+        width: 100%;    
+        height: auto;
+        margin-bottom: 20vw;
+    }
+
+    div#bloco2 div a img
+    {
+        width: 74vw;
+        height: 31vw;
+        margin: 10px;
+    }
+
+    div#bloco1 div P
+    {
+        font-size: 4vw;
+    }
+
+    img#i1, img#i2, img#i3, img#i4, img#logoimg
+    {
+        width: 90vw;
+    }
+}
+
+

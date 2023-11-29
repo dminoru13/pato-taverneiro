@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pato Taverneiro</title>
+    <link rel="stylesheet" href="cthulhu_regras.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+
+
+    <header>
+        <div>
+            <a href="criando_sistema-en.html"><img src="imgs/bandeira-en.webp" alt="" id="tradutor"></a>
+
+            <a href="index.html"><img src="imgs/icone_logo.png" alt="logo"></a>
+
+            <a href="index.html" style="text-decoration: none;">
+                <h1>Pato Taverneiro</h1>
+            </a>
+
+            <div id="menu-mobile" onclick="menulateral()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="white" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+        </div>
+        <nav class="menu" id="mnu">
+            <div>
+                <a href="criando_sistema.html" style="text-decoration: none;" class="menu-pc">
+                    <p class="clicavel">Criar um sistema</p>
+                </a>
+                <a href="beneficios.html" style="text-decoration: none;" class="menu-pc">
+                    <p class="clicavel">Beneficios</p>
+                </a>
+                <a href="narrando.html" style="text-decoration: none;" class="menu-pc">
+                    <p class="clicavel">Narrando</p>
+                </a>
+                <a href="dados.html" style="text-decoration: none;" class="menu-pc">
+                    <p class="clicavel">Dados</p>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <script src="menu.js"></script>
+
+
+
+
+    <main>
+
+        <div id="logo">
+            <h2> REGRAS</h2>
+        </div>
+
+        <div id="cx1" class="cx">
+            <img src="imgs/cthulhu_regras_i1.png" alt="">
+        </div>
+
+        <div id="cx2" class="cx">
+            <img src="imgs/cthulhu_regras_i2.png" alt="">
+        </div>
+
+        <div id="cx3" class="cx">
+            <img src="imgs/cthulhu_regras_i3.png" alt="">
+        </div>
+
+        <div id="cx4" class="cx">
+            <img src="imgs/cthulhu_regras_i4.png" alt="">
+        </div>
+
+        <div id="cx5" class="cx">
+            <img src="imgs/cthulhu_regras_i5.jpeg" alt="">
+        </div>
+        
+        
+
+    </main>
+
+
+    <footer>
+        <p>©2023 Daniel Minoru 1DS</p>
+    </footer>
+
+
+    <script>
+        const navegacao = document.querySelector("nav"); //Define o navegacao
+        var visivel = false; //Variavel visível começa falso no começo
+
+        function menulateral() { //Função chamada ao apertar o botão
+            if (!visivel) { // se (visivel == false) == true também conhecido se vísivel igual a falso
+                document.querySelector("#menu-mobile").querySelector("svg").style.rotate = '90deg'; //Roda o icone de três linha em 90 graus
+                navegacao.style.height = '35vh'; //A altura do nav recebe 35vh 
+                setTimeout(() => { //Começa um temporizador de 900 milisegundos para tornar o div flex
+                    navegacao.querySelector('div').style.display = 'flex';
+                }, 900);
+                navegacao.style.border = '1px white solid'; //Define o style da border
+                visivel = true; //O visivel se torna verdadeiro agr q mudou tudo
+            } else { //Se visivel for verdadeiro:
+                document.querySelector("#menu-mobile").querySelector("svg").style.rotate = '0deg'; // Desroda o icone de menu
+                navegacao.style.height = '0px';// A altura do nav vira 0
+                navegacao.querySelector('div').style.display = 'none'; // O div vira display none
+                navegacao.style.border = 'none'//A borda some
+                visivel = false;//Visivel agora é false
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+* {
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-image: url("imgs/fundo.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img#tradutor
+{
+    margin-right: 3vw;
+}
+
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+    display: none;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+
+
+#menu-mobile {
+    transition: rotate 1s ease;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 3px;
+    background-color: white;
+    margin-top: 8px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+header div {
+    height: 60%;
+    display: flex;
+    flex-direction: initial;
+    flex-direction: row;
+}
+
+header div h1 {
+    font-size: 3vw;
+}
+
+header div img {
+    width: 5vw;
+}
+
+nav {
+    background-color: rgb(43, 43, 43);
+    height: 40%;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+
+nav div {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    margin-top: 0.5vh;
+}
+
+  
+
+
+nav h1, header h1 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+.clicavel {
+    color: #fff;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.8s ease-out;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    font-size: 2vw;
+}
+
+
+
+.clicavel:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+footer
+{
+height: 4vh;
+background-color: #000000;
+color: #fff;
+text-align: center;
+}
+
+
+
+
+
+main {
+    height: auto;
+
+    margin-top: 0;
+}
+
+
+div#um {
+    height: 95%;
+    width: 95%;
+    background-color: rgba(0, 0, 0, 70%);
+    margin-top: 12vw;
+}
+
+.titulo {
+    color: yellow;
+    margin-left: 1%;
+    opacity: 100%;
+}
+
+
+
+div#dois {
+    display: flex;
+    flex-direction: row;
+}
+
+
+div#textos {
+    width: 350%;
+}
+
+div#textos div {
+    padding-bottom: 10px;
+    width: 90%;
+    padding-top: 0.3vw;
+    opacity: 100%;
+    text-align: center;
+}
+
+div#textos div h1 {
+    color: white;
+    font-size: 1.8vw;
+    padding: 14px;
+}
+
+
+div#textos div div,
+div#i1 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 30%);
+    border: white 3px solid;
+}
+
+
+.textos {
+    margin-top: 5vw;
+}
+
+div#t1 {
+    height: auto;
+    animation: fadeIn 1s forwards;
+}
+
+div#t1 div {
+    height: 80%;
+}
+
+div#t2 {
+    height: auto;
+    animation: fadeIn 1.5s forwards;
+}
+
+div#t2 div {
+    height: 89%;
+}
+
+
+.sub-titulo {
+    color: white;
+    font-size: 1w
+}
+
+
+
+div#sistemas {
+    height: 90%;
+    width: 140%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin-top: 4.7vw;
+    animation: fadeIn 2s forwards;
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    width: 90%;
+    margin: 10px;
+}
+
+img:hover {
+    scale: 0.95;
+    cursor: pointer;
+}
+
+
+
+div#sistemas div {
+    height: 95%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 30%);
+
+}
+
+
+
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Opcional: Adicione um leve efeito de deslize para cima */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+
+    header {
+        height: 25vw;
+        background-color: #202020;
+    }
+
+
+
+
+
+    #menu-mobile{
+        display: block;
+    }
+    
+    #menu-mobile svg{
+            transition: rotate 900ms ease;
+        
+    }
+
+    header div h1 {
+        font-size: 8vw;
+    }
+
+
+    header div img {
+        width: 12vw;
+    }
+
+
+
+    nav {
+        height: 0vh;
+        transition: height 1s ease-in-out;
+        z-index: 1000;
+        position: absolute;
+        top: 25vw;
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+    }
+
+    nav div{
+        display: none;
+        height: 35vh;
+        margin: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }   
+
+
+    nav a p,.clicavel {
+        font-size: 8vw;
+    }
+
+
+
+
+
+    main {
+        height: 2000px;
+    }
+
+    div#dois
+    {
+        flex-direction: column;
+    }
+
+
+    div#textos {
+        width: 100%;
+    }
+
+
+
+
+
+    nav h1,
+    header h1 {
+        font-size: 2vw;
+    }
+
+
+    div#textos div h1 {
+        color: white;
+        font-size: 4vw;
+    }
+
+
+
+    
+    div#sistemas
+    {
+        text-align: center;
+        margin-bottom: 20vh;
+        animation: fadeIn 2s forwards;
+        display: flex;
+        width: 100%;
+    }
+
+    div#sistemas div
+    {
+        border: #fff;
+    }
+
+
+    div#sistemas div a img
+    {
+        width: 70vw;
+        height: 27vw;
+        margin: 10px;
+        border: #fff 2px solid;
+        border-radius: 40px;
+        opacity: 80%;
+    }
+
+    img#i1, img#i2, img#i3, img#i4, img#logoimg
+    {
+        width: 90vw;
+    }
+}

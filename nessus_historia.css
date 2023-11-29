@@ -1,0 +1,406 @@
+*
+{
+    margin: 0 auto;
+}
+
+
+main h1 {
+    font-family: 'Caveat', cursive;
+}
+
+
+body
+    {
+        background-image: url("imgs/nessus_criando_fundo.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+header {
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 10vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img#tradutor
+{
+    margin-right: 3vw;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+    display: none;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+
+
+#menu-mobile {
+    transition: rotate 1s ease;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 3px;
+    background-color: white;
+    margin-top: 8px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+header div {
+    height: 60%;
+    display: flex;
+    flex-direction: initial;
+    flex-direction: row;
+}
+
+header div h1 {
+    font-size: 3vw;
+}
+
+header div img {
+    width: 5vw;
+}
+
+nav {
+    background-color: rgb(43, 43, 43);
+    height: 40%;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+
+nav div {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    margin-top: 0.5vh;
+}
+
+  
+
+
+nav h1, header h1 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+
+
+.clicavel {
+    color: #fff;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.8s ease-out;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    font-size: 2vw;
+}
+
+
+
+.clicavel:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+footer
+{
+height: 4vh;
+background-color: #000000;
+color: #fff;
+text-align: center;
+}
+
+
+
+
+main
+{
+    height: auto;
+   
+    margin-top: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+.textos
+{
+   background-color: rgba(0, 0, 0, 80%);
+   height: 90%;
+   padding-top: 1vw;
+   padding-bottom: 3vw;
+   animation: fadeIn 5s forwards;
+   margin-bottom: 1vw;
+   background-image: url("imgs/nessus_fundo_texto.png");
+}
+
+
+
+.textos div h1
+{
+   color: rgb(0, 0, 0);
+   font-size: 1.2vw;
+   margin: 1.3VW;
+}
+
+
+
+
+
+
+div#logo h2
+{
+    color: #000000;
+    text-align: center;
+    margin: 5vw;
+    font-size: 5vw;
+}
+
+
+
+div#bloco1
+{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 4vw;
+}
+
+div#t1
+{
+    width: 80%; 
+    animation: fadeIn 1.6s forwards;
+    background-size: cover;
+}
+
+div#t1 div h1
+{
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+
+div#t2
+{
+    background-size: cover;
+    width: 100%;    
+    animation: fadeIn 1.8s forwards;
+}
+
+
+img#i1
+{
+    width: 30vw;
+    margin-left: 0.3vw;
+    animation: fadeIn 1.9s forwards;
+}
+
+
+
+div#bloco2
+{
+    text-align: center;
+    margin-bottom: 20vw;
+    animation: fadeIn 2s forwards;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div#bloco2 div
+{
+    animation: fadeIn 2s forwards;
+    display: flex;
+    flex-direction: row;
+    width: 74%;
+    margin-bottom: 3vw;
+
+}
+
+.caixas 
+{
+    background-color: rgba(0, 0, 0, 80%);
+    background-image: url("imgs/nessus_fundo_texto.png");
+}
+
+div#bloco2 div h1
+{
+    color: #000000;
+    font-family: 'Caveat', cursive;
+    font-size: 1.8vw;
+    margin-left: -5vw;
+    margin-top: 3vw;
+}
+
+
+
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Opcional: Adicione um leve efeito de deslize para cima */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+
+    header {
+        height: 25vw;
+        background-color: #202020;
+    }
+
+
+
+
+
+    #menu-mobile{
+        display: block;
+    }
+    
+    #menu-mobile svg{
+            transition: rotate 900ms ease;
+        
+    }
+
+    header div h1 {
+        font-size: 8vw;
+    }
+
+
+    header div img {
+        width: 12vw;
+    }
+
+
+
+    nav {
+        height: 0vh;
+        transition: height 1s ease-in-out;
+        z-index: 1000;
+        position: absolute;
+        top: 25vw;
+        display: flex;
+        flex-direction: column;
+        border: none;
+
+    }
+
+    nav div{
+        display: none;
+        height: 35vh;
+        margin: 0;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+    }   
+
+
+    nav a p,.clicavel {
+        font-size: 8vw;
+    }
+
+    div#bloco1,div#bloco2
+    {
+        flex-direction: column;
+    }
+
+
+    
+    div#t1
+    {
+        width: 100%; 
+        height: auto;
+    }
+
+    div#t1 div h1
+    {
+        font-size: 4vw;
+        margin: 4vw;
+    }
+
+
+  .caixas
+  {
+    height: 130vw;
+  }
+
+
+    div#bloco2 div
+    {
+
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+    }
+
+    div#bloco2 div h1
+{
+    font-size: 5vw;
+    margin: 2vw;
+    width: 90%;
+    }
+
+    img#i0
+{
+    display: none;
+}
+
+
+   img#i1
+    {
+        margin-left: 34vw;
+    }
+
+    img#i1, img#i2, img#i3, img#i4, img#logoimg
+    {
+        width: 90vw;
+    }
+
+
+}
+
